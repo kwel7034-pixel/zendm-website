@@ -71,56 +71,40 @@ export default function Home() {
             </motion.div>
 
             <motion.div
-              className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-zinc-500"
+              className="mt-12 grid max-w-3xl gap-4 md:grid-cols-3"
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, delay: 0.35 }}
             >
-              <span>Built for prop firm communities</span>
-              <span>Campaign-based execution</span>
-              <span>Revenue-first analytics</span>
+              <div className="rounded-2xl border border-zinc-900 bg-zinc-950/70 p-4">
+                <p className="text-xs uppercase tracking-[0.25em] text-zinc-500">
+                  Focus
+                </p>
+                <p className="mt-3 text-sm font-medium text-white">
+                  Built for prop firm communities
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-zinc-900 bg-zinc-950/70 p-4">
+                <p className="text-xs uppercase tracking-[0.25em] text-zinc-500">
+                  Model
+                </p>
+                <p className="mt-3 text-sm font-medium text-white">
+                  Campaign-based execution
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-zinc-900 bg-zinc-950/70 p-4">
+                <p className="text-xs uppercase tracking-[0.25em] text-zinc-500">
+                  Core Layer
+                </p>
+                <p className="mt-3 text-sm font-medium text-white">
+                  Segmentation + analytics
+                </p>
+              </div>
             </motion.div>
           </motion.div>
         </div>
-      </section>
-
-      {/* CREDIBILITY BAR */}
-      <section className="border-y border-zinc-900 bg-zinc-950/40">
-        <motion.div
-          className="mx-auto grid max-w-6xl gap-6 px-6 py-8 text-sm text-zinc-400 md:grid-cols-4"
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55 }}
-          viewport={{ once: true }}
-        >
-          <div>
-            <p className="text-xs uppercase tracking-[0.25em] text-zinc-500">
-              Focus
-            </p>
-            <p className="mt-2 text-white">Built for prop firm communities</p>
-          </div>
-
-          <div>
-            <p className="text-xs uppercase tracking-[0.25em] text-zinc-500">
-              Model
-            </p>
-            <p className="mt-2 text-white">Campaign-based execution</p>
-          </div>
-
-          <div>
-            <p className="text-xs uppercase tracking-[0.25em] text-zinc-500">
-              Core layer
-            </p>
-            <p className="mt-2 text-white">Segmentation + analytics</p>
-          </div>
-
-          <div>
-            <p className="text-xs uppercase tracking-[0.25em] text-zinc-500">
-              Objective
-            </p>
-            <p className="mt-2 text-white">Recover, convert, and retain traders</p>
-          </div>
-        </motion.div>
       </section>
 
       {/* VALUE PILLARS */}
